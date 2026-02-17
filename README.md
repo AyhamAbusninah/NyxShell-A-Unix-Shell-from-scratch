@@ -230,6 +230,8 @@ All error messages — from syntax errors to execution failures — are prefixed
 All ANSI codes are managed through a single `colors.h` header using semantic macro names (`COLOR_ERR`, `COLOR_PRMPT_USER`, `COLOR_PRMPT_DIR`, etc.), making it trivial to retheme the entire shell by editing one file.
 
 ---
+---
+---
 
 ## Engineering Context
 
