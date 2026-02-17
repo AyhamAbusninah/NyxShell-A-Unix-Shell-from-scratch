@@ -2,7 +2,7 @@
 
 # NyxShell
 
-**A Unix shell built from scratch in C**
+**A production-style Unix command runtime implemented from scratch in C**
 
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-FFD500?style=for-the-badge&logo=gnubash&logoColor=black)
@@ -17,9 +17,7 @@ NyxShell is a fully functional Unix shell implemented in ~4,000 lines of C with 
 
 ---
 
-## Why This Matters
-
-If you're evaluating candidates for systems engineering, infrastructure, or platform roles:
+## Systems Engineering Focus
 
 - **This is not a wrapper around `system()`.** NyxShell manages the full process lifecycle — `fork`, `execve`, `waitpid`, `pipe`, `dup2` — with explicit control over every file descriptor and child process.
 - **Memory safety without a runtime.** All allocations are tracked and freed across a multi-stage pipeline (lexer → parser → expander → executor), including error paths and signal interrupts. Verified leak-free under Valgrind.
@@ -231,6 +229,18 @@ All error messages — from syntax errors to execution failures — are prefixed
 
 All ANSI codes are managed through a single `colors.h` header using semantic macro names (`COLOR_ERR`, `COLOR_PRMPT_USER`, `COLOR_PRMPT_DIR`, etc.), making it trivial to retheme the entire shell by editing one file.
 
+---
+
+## Engineering Context
+
+NyxShell was built as part of a deeper focus on low-level systems engineering:
+process models, memory behavior, concurrency, and distributed runtime design.
+
+It serves as a foundation for more advanced work in:
+- execution engines
+- distributed compute runtimes
+- systems infrastructure for large-scale computation
+ 
 ---
 
 ## Authors
