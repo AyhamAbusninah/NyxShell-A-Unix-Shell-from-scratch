@@ -8,7 +8,7 @@
 ![Shell](https://img.shields.io/badge/Shell-FFD500?style=for-the-badge&logo=gnubash&logoColor=black)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
-
+ 
 </div>
 
 ---
